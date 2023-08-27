@@ -1,7 +1,3 @@
-if object_id('dbo.udf_GetSKUPrice', 'U') is null 
-	drop function dbo.udf_GetSKUPrice;
-go
-
 create function dbo.udf_GetSKUPrice(@ID_SKU int)
 returns decimal(18, 2)
 as
