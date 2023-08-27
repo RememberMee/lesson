@@ -5,7 +5,7 @@ as
 	set @id_family = (select ID from dbo.Family where Surname = @FamilySurName);
 
 	if(@id_family is null)
-		print 'Семьи с данной фамилии нет в базе данных';
+		print 'Семьи с данной фамилией нет в базе данных';
 	else
 		begin
 			update 
